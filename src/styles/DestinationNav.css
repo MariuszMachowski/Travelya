@@ -1,0 +1,43 @@
+nav.destinationNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    background-color:rgba(3, 4, 39,.95);
+    z-index: 3;
+}
+nav.destinationNav a{
+    line-height: 7vh;
+    color: white;
+    margin-left: 10%;
+    text-decoration: none;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media(min-width:600px){
+    nav.destinationNav a{
+     font-size: 22px;
+    }
+}
+@media(orientation:landscape){
+    nav.destinationNav{
+        height: 12vh;
+    }
+    nav.destinationNav a{
+    line-height: 12vh;
+    font-size: 20px;
+    margin-left: 5%;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1024px){
+    nav.destinationNav a{
+        font-size: 30px;
+        line-height: 9vh;
+        }
+    nav.destinationNav{
+            height: 9vh;
+        }
+}

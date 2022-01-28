@@ -1,0 +1,23 @@
+div.destinationHeader{
+    width: 100%;
+    flex-basis: 75vh;
+    position: relative;
+    margin-top: 7vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media(orientation:landscape){
+    div.destinationHeader{
+        margin-top: 12vh;
+        flex-basis: 65vh;
+    }
+    
+}
+@media(orientation:landscape) and (min-width:1024px){
+    div.destinationHeader{
+        margin-top: 9vh;
+    }
+}

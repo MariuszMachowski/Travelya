@@ -1,0 +1,135 @@
+footer{
+    background-color:rgb(3, 4, 39);
+}
+div.footer{
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 0 5%;
+}
+.footer p.logo{
+    flex-basis: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin: 30px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.footer section.social{
+    flex-basis: 80%;
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer section.social p{
+    flex-basis: 100%;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+.footer section a{
+    flex-basis: 25%;
+}
+
+.footer a i{
+ width: 100%;
+ text-align: center;
+ line-height: 45px;
+ font-size: 22px;
+ cursor: pointer;
+ transition: .2s;
+}
+div.footerInfo{
+    flex-basis: 80%;
+    margin: 12% 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.footerInfo p{
+    flex-basis: 45%;
+    margin-left: 5%;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+p.author{
+    margin: 0 10% 10%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+@media(min-width:600px){
+    .footer p.logo{
+        margin: 40px 0;
+        font-size: 24px;
+    }
+    .footer section.social p{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .footer a i{
+        line-height: 45px;
+        font-size: 28px;
+       }
+       div.footerInfo p{
+        flex-basis: 40%;
+        margin-left: 10%;
+        font-size: 22px;
+    }
+    p.author{
+        font-size: 22px;
+    }
+}
+
+@media(orientation:landscape){
+    .footer p.logo{
+        margin: 30px 0;
+        font-size: 22px;
+    }
+    div.footerInfo{
+        flex-basis: 60%;
+        margin: 6% 12% 4% 16%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.footerInfo p{
+        flex-basis: 40%;
+        margin-left: 0;
+        font-size: 22px;
+    }
+    p.author{
+        margin: 0 10% 5%;
+    }
+}
+
+@media(orientation:landscape)and (min-width:1024px){
+    .footer section.social{
+        flex-basis: 50%;
+        margin: 0 25%;
+    }
+    .footer a i{
+        font-size: 30px;
+       }
+    .footer a i:hover{
+           color: orangered;
+       }
+    div.footerInfo{
+        flex-basis: 50%;
+        margin: 6% 20% 4% 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.footerInfo p:hover{
+        color: orangered;
+    }
+
+}
+@media(orientation:landscape) and (min-width:1920px){
+
+}

@@ -1,0 +1,133 @@
+div.destinations{
+    margin: 4% 5% 5% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+a.destination{
+    flex-basis: 47%;
+    height: 50vw;
+    margin:3% 0;
+    position: relative;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    transition: .2s;
+}
+
+a.destination:nth-child(1){
+    background-image: url('../images/regions/Bali.jpg');
+}
+a.destination:nth-child(2){
+    background-image: url('../images/regions/Java.jpg');
+}
+
+a.destination:nth-child(3){
+    background-image: url('../images/regions/Sulawesi.jpg');
+}
+
+a.destination:nth-child(4){
+    background-image: url('../images/regions/Sumatra.jpg');
+}
+a.destination:nth-child(5){
+    background-image: url('../images/regions/Maluku.webp');
+}
+a.destination:nth-child(6){
+    background-image: url('../images/regions/Kalimantan.jpg');
+}
+
+
+a.destination p{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+    text-shadow: 1px 1px #222;
+}
+div.border{
+    border-bottom: 2px solid #888;
+    width: 85vw;
+    margin: 2% auto 0 auto;
+    padding-bottom: 3%;
+}
+@media(min-width:412px){
+    h2.highlight{
+        font-size: 40px;
+    } 
+    
+    a.destination p{
+        font-size: 34px;
+    }
+        }
+
+@media(min-width:600px){
+    h2.highlight{
+        font-size: 56px;
+    } 
+a.destination p{
+    font-size: 44px;
+}
+    }
+
+    @media(orientation:landscape){
+        a.destination{
+            flex-basis: 31%;
+            height: 25vw;
+            margin:1.5% 0;
+        }
+        a.destination p{
+            font-size: 24px;
+        }
+    }   
+    
+    @media(orientation:landscape)and (min-width:960px){
+        h2.highlight{
+            font-size: 68px;
+        } 
+        a.destination{
+            margin:3% 0;
+        }
+        a.destination p{
+            font-size: 36px;
+        }
+    }    
+    @media(orientation:landscape)and (min-width:1024px){
+        div.destinations{
+            margin: 2% 8% 5% 8%;
+            justify-content: space-around;
+        }
+        a.destination{
+            background-size:100% 100%;
+            flex-basis: 31%;
+            height: 22vw;
+            margin:1.5% 0;
+            cursor: pointer;
+        }
+        a.destination:hover{
+            background-size: 112% 112%;
+        }
+    
+        a.destination p{
+            font-size: 30px;
+        }
+    }    
+
+    @media(orientation:landscape) and (min-width:1920px){
+        h2.highlight{
+            font-size: 90px;
+        } 
+        a.destination{
+            border-radius: 20px;
+        }
+        a.destination p{
+            font-size: 46px;
+        }
+    }

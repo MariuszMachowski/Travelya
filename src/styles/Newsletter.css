@@ -1,0 +1,194 @@
+form.newsWrap{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 7% 5%;
+    margin-bottom: 12%;
+   background-image: url('../images/newsletter.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:70% center;
+   border-radius: 5%;
+}
+form.newsWrap input,button{
+    flex-basis: 86%;
+    margin: 0 7%;
+    border-radius: 10px;
+    border:none;
+    height: 40px;
+    font-family:'Dongle', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+form.newsWrap p.info{
+    text-align: center;
+    width: 88%;
+    color: white;
+    margin:6% 6% 0% 6%;
+    font-size: 30px;
+    line-height: .8;
+}
+form.newsWrap p.wrongEmail{
+    color: rgb(48, 43, 43);
+    text-align: center;
+    width: 90%;
+    margin: 2% 5% 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form.newsWrap input{
+    padding-left: 5%;
+    background-color: rgba(255,255,255,.5);
+    outline: none;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+form.newsWrap button{
+    background-color: rgba(0, 84, 162, 0.85);
+    margin-bottom: 5%;
+    color: white;
+}
+div.succesInfo{
+    position: absolute;
+    transform: scale(0);
+    top: -20%;
+    left: -2%;
+    width: 104%;
+    height: 110px;
+    background-color: white;
+    border:2px solid #777;
+    transition: .3s;
+    z-index: 5;
+}
+div.succesInfo.active{
+    transform: scale(1);
+}
+div.succesInfo i{
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    color: rgb(0, 84, 162);
+    cursor: pointer;
+}
+div.succesInfo p{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+    color: rgb(0, 84, 162);
+}
+div.succesInfo p:nth-of-type(2){
+    margin-top: 8%;
+}
+::placeholder {
+    color: #444;
+  }
+  @media(min-width:412px){
+    form.newsWrap input,button{
+        font-size: 20px;
+    }
+  }  
+@media(min-width:600px){
+    form.newsWrap p.info{
+        font-size: 36px;
+    }
+    form.newsWrap input,button{
+        height: 50px;
+        font-size: 24px;
+    }
+    div.succesInfo{
+        height: 250px;
+    }
+    div.succesInfo p{
+        font-size: 40px;
+    }
+    div.succesInfo i{
+        font-size: 36px;
+    }
+
+}
+@media(orientation:landscape){
+    div.succesInfo{
+        top: -20%;
+        left: 3%;
+        width: 94%;
+        height: 170px;
+    }
+    div.succesInfo p{
+        font-size: 32px;
+    }
+    form.newsWrap{
+        border-radius: 20px;
+    }
+    form.newsWrap p.info{
+        font-size: 40px;
+    }
+    form.newsWrap input,button{
+        font-size: 22px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:851px){
+    form.newsWrap input,button{
+        font-size: 26px;
+    }
+    form.newsWrap{
+   margin-top: 5%;
+    }
+}
+@media(orientation:landscape) and (min-width:1024px){
+    div.succesInfo{
+        height: 200px;
+        width: 80%;
+        left: 10%;
+    }
+    div.succesInfo p{
+        font-size: 40px;
+    }
+    div.succesInfo p:nth-of-type(2){
+        margin-top: 6%;
+    }
+    div.succesInfo i.hide{
+       display: block;
+    }
+    form.newsWrap{
+        margin: 5% 6%;
+    }
+    form.newsWrap p.wrongEmail{
+        margin: 0% 5% 2%;
+        font-size: 30px;
+    }
+    form.newsWrap p.info{
+        margin:3% 9% 2% 6%;
+        font-size: 50px;
+    }
+    form.newsWrap input{
+        flex-basis: 70%;
+        margin: 0;
+        margin-left: 6%;
+        color: #222;
+    }
+    form.newsWrap button{
+        flex-basis: 15%;
+        margin: 0;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+}
+@media(orientation:landscape) and (min-width:1920px){
+    form.newsWrap p.info{
+        font-size: 66px;
+    }
+    form.newsWrap input,form.newsWrap button{
+font-size: 24px;
+flex-basis: 70%;
+margin-left: 15%;
+margin-right: 15%;
+border-radius: 0px;
+    }
+}

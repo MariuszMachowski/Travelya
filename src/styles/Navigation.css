@@ -1,0 +1,140 @@
+ul.menu{
+    position: fixed;
+    top: 0;
+    right: -40%;
+    bottom: 0;
+    width: 40%;
+    background-color:rgba(3, 4, 39,.9);
+    color: white;
+    list-style: none;
+    transition: .3s;
+    z-index: 4;
+  }
+ul.menu li:nth-of-type(1){
+      margin-top: 50%;
+  }
+ul.menu li{
+    font-size: 22px;
+    margin: 20px;
+    border-bottom: 2px solid orangered;
+}
+
+i{
+    font-size: 20px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+ i.fa-bars{
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    z-index: 3;
+ }
+ i.fa-bars.dark{
+color: rgb(9, 12, 68);
+ }
+ i.fa-times{
+     position: absolute;
+     top: 3%;
+     right: 12%;
+     z-index: 2;
+ }
+ i.fa-bars.active{
+     font-size: 0;
+ }
+ i.fa-bars.active+ul{
+     right: -1%;
+ }
+
+ @media(min-width:360px){
+     i{
+         font-size: 24px;
+     }
+ }
+ @media(min-width:600px){
+    i{
+        font-size: 28px;
+    }
+    ul.menu li{
+        font-size: 30px;
+    }
+ }
+ @media(orientation:landscape) {
+    ul.menu li{
+        font-size: 18px;
+    }
+ }
+ @media(orientation:landscape) and (min-width:732px){
+    ul.menu{
+        right: -30%;
+        width: 30%;
+      }
+    ul.menu li:nth-of-type(1){
+        margin-top: 25%;
+    }
+    ul.menu li{
+        font-size: 26px;
+    }
+    i{
+        font-size: 32px;
+    }
+}
+@media(orientation:landscape){
+    ul.menu li:nth-of-type(1){
+        margin-top: 20%;
+    }
+}
+@media(orientation:landscape) and (min-width:1024px){
+i.fa-bars,i.fa-times{
+    display: none;
+}
+ul.menu{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    width: 100%;
+    background-color: rgba(9,10,28,0);
+    color: white;
+    list-style: none;
+    transition: .3s;
+  }
+
+  ul.menu.active{
+    background-color:rgba(3, 4, 39,.9);
+  }
+  ul.menu li:nth-of-type(1){
+    margin-top: 0;
+    margin-left: 30%;
+}
+ul.menu li{
+    width: 140px;
+    margin: 0 20px;
+    border: none;
+}
+ul.menu li a{
+    transition: .2s;
+    font-size: 32px;
+    text-align: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+ul.menu li a:hover{
+    color: orangered;
+}
+}
+@media(orientation:landscape) and (min-width:1920px){
+    ul.menu li a{
+        font-size: 40px;
+    }
+}
+@media(orientation:landscape) and (min-width:2220px){
+ul.menu li:nth-of-type(1){
+    margin-left: 50%;
+}
+}

@@ -1,0 +1,53 @@
+div.destinationMain{
+    margin:10% 5%;
+}
+div.mapWrap{
+    height: 50vh;
+    width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+div.destinationMain p{
+    text-align: left;
+    color: rgb(0, 84, 162);
+    line-height: 1.3;
+    font-size: 18px;
+    margin: 5% 0 2%;
+    border-bottom: 2px solid #888;
+    padding-bottom: 10%;
+}
+
+
+@media(min-width:600px){
+    h2.destinationTitle{
+        font-size: 56px;
+    }
+    div.destinationMain p{
+        font-size: 28px;
+    }
+}
+
+@media(orientation:landscape){
+    div.destinationMain{
+        margin:5%;
+    }
+    div.mapWrap{
+        height: 60vh;
+        margin-top: 5%;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1024px){
+    
+    h2.destinationTitle{
+        font-size: 56px;
+    }
+    div.destinationMain{
+         margin:5% 15% 0;
+     }
+     div.destinationMain p{
+        margin-bottom: 0;
+        padding-bottom: 6%;
+    }
+}
